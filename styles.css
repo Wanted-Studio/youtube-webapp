@@ -1,67 +1,70 @@
-/* Genel ayarlar */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
-/* Header ve Navigation */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Nav ve içerik için stil */
 header {
-    background-color: #111;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
 }
 
-nav ul {
+ul {
     list-style: none;
     display: flex;
-    gap: 15px;
 }
 
-nav ul li a {
-    color: #fff;
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 500;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.main {
+    flex: 1;
+    padding: 2rem;
 }
 
-/* Ana bölüm */
-.hero {
-    background-color: #444;
-    color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.content {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
 footer {
-    background-color: #111;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    margin-top: auto;
 }
